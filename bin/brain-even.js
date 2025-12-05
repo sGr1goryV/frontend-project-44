@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+import readlineSync from 'readline-sync';
+import { greeting } from '../src/cli.js';
+
+const brainEven = () => {
+  const userName = greeting();
+
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+
+  for (let i = 0; i < 3; i += 1) {
+    const number = parseInt((Math.random()) * 11);
+    const answer = readlineSync.question(`Quesion: ${number}\nYour answer: `);
+    let correctAnswer = '?'
+    if (number % 2 !== 0 && answer === 'no' || number % 2 === 0 && answer === 'yes') {
+      console.log('Correct!');
+    } else {
+      console.log(`${answer} is wrong answer. Correct answer was ${correctAnswer}`);
+      console.log(`Let's try again, ${userName}`)
+      return;
+    }
+  }
+  console.log(`Congratulations, ${userName}`);
+}
+
+brainEven();
