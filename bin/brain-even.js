@@ -10,11 +10,18 @@ const brainEven = () => {
   for (let i = 0; i < 3; i += 1) {
     const number = parseInt((Math.random()) * 11);
     const answer = readlineSync.question(`Quesion: ${number}\nYour answer: `);
-    let correctAnswer = '?'
+    let correctAnswer = '';
+
+    if (number % 2 !== 0) {
+      correctAnswer += 'no'
+    } else if (number % 2 === 0) {
+      correctAnswer += 'yes'
+    }
+
     if (number % 2 !== 0 && answer === 'no' || number % 2 === 0 && answer === 'yes') {
       console.log('Correct!');
     } else {
-      console.log(`${answer} is wrong answer. Correct answer was ${correctAnswer}`);
+      console.log(`'${answer}' is wrong answer. Correct answer was '${correctAnswer}'`);
       console.log(`Let's try again, ${userName}`)
       return;
     }
