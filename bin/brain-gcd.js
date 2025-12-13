@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
+import _ from 'lodash';
 import { greeting } from '../src/cli.js';
 
 const brainGcd = () => {
@@ -8,8 +9,8 @@ const brainGcd = () => {
   console.log('Find the greatest common divisor of given numbers.');
 
   for (let i = 0; i < 3; i += 1) {
-    let num1 = parseInt(Math.random() * 101);
-    let num2 = parseInt(Math.random() * 101);
+    let num1 = _.random(0, 100);
+    let num2 = _.random(0, 100);
 
     const answer = readlineSync.question(`Quesion: ${num1} ${num2}\nYour answer: `);
 

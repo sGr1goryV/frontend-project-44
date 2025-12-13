@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
+import _ from 'lodash';
 import { greeting } from '../src/cli.js';
 
 const brainEven = () => {
@@ -8,7 +9,7 @@ const brainEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   for (let i = 0; i < 3; i += 1) {
-    const number = parseInt((Math.random()) * 11);
+    const number = _.random(0, 50);
     const answer = readlineSync.question(`Quesion: ${number}\nYour answer: `);
     let correctAnswer = '';
 

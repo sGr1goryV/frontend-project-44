@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
+import _ from 'lodash';
 import { greeting } from '../src/cli.js';
 
 const brainCalc = () => {
@@ -8,8 +9,8 @@ const brainCalc = () => {
   console.log('What is the result of the expression?');
 
   for (let i = 0; i < 3; i += 1) {
-    const num1 = parseInt(Math.random() * 51);
-    const num2 = parseInt(Math.random() * 51);
+    const num1 = _.random(0, 50);
+    const num2 = _.random(0, 50);
     const obj = {
       '+': num1 + num2,
       '-': num1 - num2,
