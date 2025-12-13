@@ -17,7 +17,7 @@ const brainCalc = () => {
       '*': num1 * num2,
     }
     const entries = Object.entries(obj);
-    const randomIndex = parseInt(Math.random() * 3);
+    const randomIndex = _.random(0, 2);
 
     const answer = readlineSync.question(`Question: ${num1} ${entries[randomIndex][0]} ${num2}\nYour answer: `);
     const correctAnswer = entries[randomIndex][1];
