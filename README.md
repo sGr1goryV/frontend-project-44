@@ -10,3 +10,6 @@
 
 ### Brain calc game:
     https://asciinema.org/a/ACiW89jXi72UHT6N8tQyEx9HT
+
+### Brain gcd game:
+    https://asciinema.org/a/aL8ArGLJJlRnn2bbxUh59BBRO
