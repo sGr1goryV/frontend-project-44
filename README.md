@@ -7,9 +7,11 @@
 ### Brain even game:
     https://asciinema.org/a/sVZzykamnzkFJLh4nyz5HNpLG
 
-
 ### Brain calc game:
     https://asciinema.org/a/ACiW89jXi72UHT6N8tQyEx9HT
 
 ### Brain gcd game:
     https://asciinema.org/a/aL8ArGLJJlRnn2bbxUh59BBRO
+
+### Brain progression game:
+    https://asciinema.org/a/DvbGHwcDY66nwP40FO9m7qG1n
