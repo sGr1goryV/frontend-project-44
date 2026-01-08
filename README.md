@@ -15,3 +15,6 @@
 
 ### Brain progression game:
     https://asciinema.org/a/DvbGHwcDY66nwP40FO9m7qG1n
+
+### Brain prime game:
+    https://asciinema.org/a/2VVxbkzmZDWxjZvV
